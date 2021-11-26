@@ -1,0 +1,77 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./components/search/search";
+$theme-colors: (
+    "info": tomato,
+    "danger": teal,
+    "dark": rgb(103, 102, 117)
+);
+
+$body-bg: rgba(248, 248, 248, 0.651);
+$body-color: rgb(60, 60, 61);
+
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
+
+.error-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(196, 148, 148);
+  color: red;
+  height: fit-content;
+  padding: 5%;
+  margin-left: 30vh;
+  margin-right : 30vh;
+  margin-top: 0;
+  margin-bottom:0;
+}
+
+.App-header {
+  background-color: #dae1f0;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 20%;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.btn-purple {
+  background-color: #c7caebbd;
+  color: white;
+  padding: 1%;
+}
+
+.reload-button {
+  margin: 10px;
+}
+
+.container {
+  padding: 80px;
+}
+
+.book {
+  margin: 5%
+}
+
+.book-card {
+  word-wrap: normal;
+  width: 100%;
+  max-height: 450px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  border:  #bbaae0 ;
+  padding: 20px;
+}
+
+.book-description{
+  overflow-y:scroll;
+  max-height: 400px;
+}
+
+.book-link {
+  margin-bottom: 10px;;
+}
