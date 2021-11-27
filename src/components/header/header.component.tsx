@@ -1,11 +1,12 @@
+import book from '../../assets/img/book.png'
 export function Header() {
-  function reload() {
-    // window.location.reload();
-  }
 
   return (
     <header className="App-header">
-      <button onClick={reload} className="btn btn-dark btn-purple reload-button"> Reload </button>
+      <div className="title-container">
+        <span> React Google Books App</span>
+        <img className="book-icon" src={book} alt="book icon" />
+      </div>
     </header>
   )
 }

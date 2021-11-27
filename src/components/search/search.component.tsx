@@ -23,7 +23,7 @@ export function Search(props: any) {
 
       <form onSubmit={async (e)=>{ await getBooksFromApi(e, query)}}>
         <label className="search-label">
-          <input onChange={(e) => setQuery(e.target.value)} type="text" name="name" id="searchParam" />
+          <input onChange={(e) => setQuery(e.target.value)} type="text" className="search-input" name="name" id="searchParam" />
         </label>
         <input type="submit" className="btn btn-dark" id="searchButton" value="Search" />
       </form>

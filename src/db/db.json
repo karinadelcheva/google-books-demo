@@ -2,7 +2,7 @@
     "annotations": [
         {
             "id": "1",
-            "bookId": "AATUDwAAQBAJ",
+            "bookId": "Mq72DwAAQBAJ",
             "title": "Test Mock",
             "content": "First mocking test of the book annotations' server",
             "createdAt": "",
