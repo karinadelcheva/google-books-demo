@@ -30,19 +30,17 @@ $body-color: rgb(70, 70, 78);
   font-weight: 400;
   font-family: Magilio;
   -webkit-text-stroke: 1px black;
+  
 }
-
-body {
-  background: -webkit-linear-gradient(-50deg, rgba(255, 255, 255, 0.9) 40%, rgb(0, 0, 0) 0%);
-}
-
 
 .error-message {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(196, 148, 148);
-  color: red;
+  background:
+  linear-gradient(to right, #c73434fa, transparent),
+  url(https://grainy-gradients.vercel.app/noise.svg);  
+  color: rgb(248, 234, 234);
   height: fit-content;
   padding: 5%;
   margin-left: 30vh;
@@ -53,7 +51,10 @@ body {
 }
 
 .App {
-  height: 200vh;
+  min-height: 100vh;
+  margin-bottom: -50px;
+  font-family: Magilio;
+
 }
 
 .App-header {
@@ -109,9 +110,11 @@ body {
   max-width: 400px;
   margin-right: 20px;
   margin-bottom: 50px;
-  background-color: #bba8ebb0;
-  border-color: #bbaae0;
-  border: 1px;
+  color: white;
+  background:
+  linear-gradient(217deg, #bba8eb, transparent),
+  url(https://grainy-gradients.vercel.app/noise.svg);
+  box-shadow: rgb(50 50 93 / 20%) 0px 30px 60px -12px, rgb(0 0 0 / 28%) 0px 18px 36px -18px;
   padding: 20px;
 }
 

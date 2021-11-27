@@ -14,6 +14,10 @@ export default function BooksOverview(props: { books: Book[], annotations: Annot
         {props.books.map((book: Book) => (
           <div className="book" key={book.id} data-index={book.id}>
             <div className="book-card" >
+              <feTurbulence type='fractalNoise'
+                baseFrequency='0.65'
+                numOctaves='3'
+                stitchTiles='stitch' />
               <div className="row">
                 <div className="col-4">
                   <img className="book-thumbnail" src={`${book.thumbnail}`} alt={book.title} />
