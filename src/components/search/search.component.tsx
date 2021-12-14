@@ -9,7 +9,7 @@ export function Search(props: any) {
     event.preventDefault()
     const repository = new BooksRepository();
     let response = await repository.getStructuredBooks(queryParam);
-    console.log('respose ', response)
+    console.log('response ', response)
     props.parentCallback(response)
 
     return response;

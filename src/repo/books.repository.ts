@@ -18,7 +18,6 @@ export class BooksRepository extends BaseRepository {
     .then(async (response: any) => { 
       if (response.ok) {
         let result = await response.json();
-        console.log(result)
         let booksFromAPI = result['items'];
         const books: Book[] = booksFromAPI.map((book: any) => {
           return new Book(
@@ -30,7 +29,7 @@ export class BooksRepository extends BaseRepository {
             book.volumeInfo.publisher,
             book.volumeInfo.publishedDate,
             book.volumeInfo.description,
-            book.volumeInfo.imageLinks.thumbnail,
+            book.volumeInfo.imageLinks.thumbnail || '',
             book.volumeInfo.previewLink
           );
         });

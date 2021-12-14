@@ -1,28 +1,35 @@
 {
-  "name": "google-books-demo-react",
+  "name": "08-react-comments-lab",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.15.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "@types/jest": "^26.0.24",
-    "@types/node": "^12.20.37",
-    "@types/react": "^17.0.37",
-    "@types/react-dom": "^17.0.11",
-    "bootstrap": "^5.1.3",
-    "json-server": "^0.17.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "express": "^4.17.1",
+    "materialize-css": "^1.0.0",
     "react": "^17.0.2",
-    "react-bootstrap": "^2.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.1.1",
     "react-scripts": "4.0.3",
-    "sass": "^1.43.5",
     "slick-carousel": "^1.8.1",
-    "typescript": "^4.5.2",
-    "web-vitals": "^1.1.2"
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/materialize-css": "^1.0.11",
+    "json-server": "^0.17.0",
+    "nodemon": "^2.0.15"
   },
   "scripts": {
-    "start": "react-scripts start tsc -w",
+    "start": "react-scripts start",
+    "server": "nodemon ./server/server.js localhost 9000 -w ./server ",
+    "json-server": "json-server --watch db.json --port 9000",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -44,8 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/react-slick": "^0.23.7"
   }
 }
